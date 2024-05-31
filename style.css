@@ -1,0 +1,106 @@
+/* Reset some default browser styles */
+body, h1, p, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: #444;
+}
+
+#rpsButton {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+#rpsButton button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px;
+    margin: 0 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#rpsButton button img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+#rpsButton button:hover {
+    background-color: #45a049;
+}
+
+#rpsButton button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#score {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+#score p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+#score span {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#roundResult, #gameResult {
+    font-size: 1.5em;
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+    min-height: 1.5em;
+    width: 100%;
+}
+
+#roundResult {
+    color: #ff9800;
+}
+
+#gameResult {
+    font-size: 2em;
+    font-weight: bold;
+    color: #f44336;
+}
+
+@media (max-width: 600px) {
+    #rpsButton {
+        flex-direction: column;
+    }
+
+    #rpsButton button {
+        margin: 10px 0;
+        width: 100%;
+    }
+}
